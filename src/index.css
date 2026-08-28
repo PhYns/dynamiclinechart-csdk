@@ -1,0 +1,217 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #0b0b0b;
+  background: #f9f9f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+code,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 650;
+  margin: 0 0 4px;
+}
+
+h2 {
+  font-size: 0.95rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.sub {
+  margin: 4px 0 14px;
+  color: #52514e;
+  font-size: 0.88rem;
+}
+
+.error {
+  padding: 12px 14px;
+  border: 1px solid rgba(208, 59, 59, 0.4);
+  background: rgba(208, 59, 59, 0.06);
+  border-radius: 9px;
+}
+
+section {
+  background: #fcfcfb;
+  border: 1px solid rgba(11, 11, 11, 0.1);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+section.muted {
+  background: #f5f5f2;
+}
+
+/* --------------------------------------------------------------- controls -- */
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  background: #fcfcfb;
+  border: 1px solid rgba(11, 11, 11, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #52514e;
+}
+
+.controls label.check {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.controls select,
+.controls input[type='date'] {
+  padding: 6px 8px;
+  border: 1px solid #c3c2b7;
+  border-radius: 7px;
+  background: #fff;
+  font: inherit;
+  font-size: 0.87rem;
+}
+
+.controls input[type='range'],
+.controls input[type='checkbox'] {
+  accent-color: #2a78d6;
+}
+
+/* ------------------------------------------------------------------ tiles -- */
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tile {
+  background: #fcfcfb;
+  border: 1px solid rgba(11, 11, 11, 0.1);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.tile b {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 620;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.tile span {
+  font-size: 0.8rem;
+  color: #52514e;
+}
+
+.placeholder {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border: 1px dashed #c3c2b7;
+  border-radius: 10px;
+  background: #fff;
+  color: #52514e;
+  font-size: 0.88rem;
+}
+
+/* ------------------------------------------------------------------ table -- */
+
+.table-wrap {
+  max-height: 420px;
+  overflow: auto;
+  border: 1px solid #e1e0d9;
+  border-radius: 9px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: #fcfcfb;
+  text-align: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #898781;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e1e0d9;
+}
+
+tbody td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #f0efec;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr.dim {
+  color: #898781;
+}
+
+td.num,
+th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+td.member {
+  font-weight: 600;
+}
+
+tr.dim td.member {
+  font-weight: 400;
+}
+
+td.empty {
+  padding: 24px;
+  text-align: center;
+  color: #898781;
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
